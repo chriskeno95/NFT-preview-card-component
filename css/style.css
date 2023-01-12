@@ -23,6 +23,29 @@ body {
     margin: 10px;
     
 }
+.container .main-img {
+    position: relative;
+}
+.main-img .img-overlay {
+    position: absolute;
+    top: 0;
+    background-color:hsl(178, 100%, 50%,60%);
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    opacity: 0;
+}
+.main-img .img-overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.main-img .img-overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
 .card-details {
     height: 140px;
     padding: 10px 0px;
@@ -42,7 +65,10 @@ h1 {
     color: white;
     font-weight: 400;
 }
-
+h1:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
 p {
     color:hsl(215, 51%, 70%);
     font-size: .8em;
@@ -99,4 +125,8 @@ h6 {
 }
 .author {
     color: white;
+}
+.author:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
