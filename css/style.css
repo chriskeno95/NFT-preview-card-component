@@ -30,10 +30,11 @@ body {
     position: absolute;
     top: 0;
     background-color:hsl(178, 100%, 50%,60%);
-    height: 100%;
-    width: 100%;
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
     z-index: 999;
     opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 .main-img .img-overlay:hover {
     opacity: 1;
